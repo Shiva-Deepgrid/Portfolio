@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Clicker+Script&family=Open+Sans:wght@400;500&family=Stick+No+Bills:wght@700&display=swap');
+:root
+{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Poppins' sans-serif;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+::before,::after{
+    box-sizing: border-box;
+}
+.section
+{
+    
+    
+    display: block;
+    
+    
+    opacity: 1;
+}
+.main-content
+{
+    padding-left: 270px;
+}
+@media (max-width:1200px) {
+    .main-content{
+        padding-left: 0px;
+    }
+    
+}
+.padd-15{
+    padding-left:15px;
+    padding-right: 15px;
+}
+
+.container
+{
+    
+    width: 100%;
+    /* margin: auto; */
+    margin-left: 500px;
+    
+     
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+    text-decoration: none;
+}
+.row:hover{
+    text-decoration: none;
+}
+.button{
+    padding-left: 1px;
+    padding-bottom: 50px;
+}
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+    font-family: 'Stick No Bills', cursive;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 35px rgba(255, 0, 0, 0.77);
+
+    color: white;
+}
+/* aside */
+.aside
+{
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left:0;
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    z-index: 10;
+}
+.aside .logo
+{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.aside .logo a{
+    color:var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+.aside .logo a span
+{
+    font-family: 'Stick No Bills', cursive;
+    font-size: 40px;
+}
+.aside .logo a::before
+{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color) ;
+    border-left: 5px solid var(--skin-color) ;
+    bottom: 0;
+    left: 0;
+}
+.aside .logo a::after
+{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color) ;
+    border-right: 5px solid var(--skin-color) ;
+    top: 0;
+    right: 0;
+}
+li{
+    list-style-type: none;
+
+}
+.aside .nav
+{
+    margin-top: 50px;
+
+}
+.aside .nav li
+{
+    margin-bottom: 20px;
+    
+    display: block;
+    
+
+}
+.aside .nav li a{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+
+}
+.aside .nav li a.active
+{
+    color: var(--skin-color);
+}
+.aside .nav li a i{
+    margin-right:15px ;
+}
+/*HOME*/
+.home
+{   
+    padding-top: 100px;
+    display: flex;
+    color: var(--text-black-900);
+}
+.home_section {
+    display: flex;
+    color: var(--text-black-900);
+}
+
+h3.hello
+{
+    font-size: 28px;
+    margin:15px 0;
+}
+h3.hello span
+{
+    font-family: 'Stick No Bills', cursive;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+h3.my-profession
+{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.typing
+{
+
+    font-family: 'Stick No Bills', cursive;
+    font-size: 35px;
+    color: var(--skin-color);
+     
+}
+.home-info p
+{
+    margin-bottom: 70px;
+    font-size: 25px;
+    color: var(--text-black-700);
+}
+.home .home-img
+{
+flex: 0 0 40%;
+max-width: 40%;
+text-align: center;
+position: relative;
+}
+.home-img::after
+{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width:80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 40px;
+    bottom: -30px;
+
+
+}
+.home-img::before
+{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width:80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: 40px;
+    top: -40px;
+
+
+}
+
+.home .home-img img
+{
+    margin: auto;
+    border-radius: 5px;
+    height: 350px;
+    width: 300px;
+}
+.con-head
+{
+    color:gray;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-family: 'Stick No Bills', cursive;
+    font-size: 80px;
+    padding: 40px 90px;
+    text-align: center;
+    max-width:1100px;
+    width: 100%;
+    margin: auto;
+    margin-top: 110px;
+    text-decoration: none;
+}
+.con-head:hover{
+    text-decoration: none;
+}
+.con-container{
+    width: max-content;
+    
+}
+#social_icons{
+    margin-top:300px;
+    width:200px;
+    height:180px;
+    stroke:#302e4d;
+   
+}
+#social_icons:hover{
+    stroke:var(--skin-color);
+    transition-delay: 10ms;
+    transform: translate(10px, 0px);
+    transition-duration: 1s;
+}
+
+#progress_title{
+    width: 28%;
+    text-align: left;
+    font-family: 'Stick No Bills', cursive;
+    font-size: 40px;
+    
+    
+}
+#progress_bar {
+    width: 60%;
+    color: #d8d9da00;
+    box-shadow: 0 0px 35px rgba(255, 0, 0, 0.77);
+}
+#progress_perecentage{
+    color:var(--skin-color);
+    padding-left: 10px;
+    font-family: 'Stick No Bills', cursive;
+    font-size: 50px;
+}
+.skill-sec
+{
+    width: 900px;
+    margin-top: 300px;
+    text-align: center;
+}
+.skill-head{
+    color:gray;
+    font-weight: 900;
+    letter-spacing: 80px;
+    font-family: 'Stick No Bills', cursive;
+    font-size: 90px;
+    padding: auto;
+    text-align: center;
+    max-width:1100px;
+    width: 0px;
+    height: 0px;
+    padding-left: 10px;
+    margin-top: 80px;
+    text-decoration: none;
+    
+
+}
+.skill-con{
+    display: flex;
+}
+.skill-content{
+    padding-left: 200px;
+    background-color: white;
+
+}
+.skill-head .span{
+    padding-left: 10px;
+}
+
+.project_section {
+    padding-left: 270px;
+    align-items: center;
+    justify-items: center;
+}
+ @media (max-width:1200px) {
+    .project_section{
+        padding-left: 0px;
+    }
+    
+ }
+
+.project_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project_section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+.container .card {
+    position: relative;
+    top:150px;
+    left: auto;
+    width: 300px;
+    height: 400px;
+    background: var(--skin-color);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(255, 0, 0, 0.77);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    transform: translateY(-20px);
+}
+
+.container .card .content .imgBx {
+    color: var(--text-black-900);
+    text-align: justify;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+
+.container .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container .card .sci {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    display: flex;
+    padding: 0px;
+}
+
+.container .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .sci li a {
+    color: white;
+    font-size: 14px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+ .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+ .logo a {
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+ .logo a span {
+    font-family: 'Stick No Bills', cursive;
+    font-size: 40px;
+}
+
+ .logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+
+.logo a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 40px;
+    width: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    margin-top: 12px
+}
+
+#check {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .checkbtn {
+        display: none;
+    }
+
+    nav ul li a {
+        display: none;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn:hover {
+        color:var(--skin-color) ;
+    
+    }
+   li{
+    list-style-type:none;
+   }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: unset .5s;
+        z-index: 2;
+    }
+    nav ul li {
+        background-color: white;
+    }
+    nav ul li {
+        display: block;        
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+        padding: 0px 100px;
+    }
+    .topmenu nav li a {
+            font-size: 16px;
+            font-weight: 600;
+            display: block;
+            border-bottom: 1px solid var(--bg-black-50);
+            color: var(--text-black-900);
+            padding: 5px 15px;
+    
+        }
+    
+    .topmenu nav li a.active {
+            color: var(--skin-color);
+        }
+    
+    .topmenu nav li a i {
+            margin-right: 15px;
+        }
+
+    a:hover{
+        color:black;
+        text-decoration: none;
+        list-style-type:none;
+    }
+    a.active {
+        background: none;
+        color: var(--skin-color);
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .aside{
+        display: none;
+    }
+}
+
+@media (min-width:1200px) {
+    .topmenu{
+        display: none;
+
+    }
+    
+}
+.project-mainhead {
+    color: gray;
+    font-weight: 900;
+    letter-spacing: 50px;
+    font-family: 'Stick No Bills', cursive;
+    font-size: 90px;
+    padding: auto;
+    text-align: center;
+    max-width: 1100px;
+    width: 0px;
+    height: 0px;
+    padding-left: 50px;
+    margin-top: 80px;
+    text-decoration: none;
+}
+.about-head {
+    color: var(--text-black-900);
+    font-weight: 700;
+    letter-spacing: 20px;
+    position: relative;
+    font-family: 'Stick No Bills', cursive;
+    font-size: 60px;
+
+}
+.para {
+    font-size: 22px;
+    margin: 15px 0;
+    opacity: 0.9;
+}
+
+.video{
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
